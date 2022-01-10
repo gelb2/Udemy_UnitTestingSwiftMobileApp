@@ -41,6 +41,10 @@ class Udemy_UnitTestingSwiftMobileAppTests: XCTestCase {
         // Any test you write for XCTest can be annotated as throws and async.
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+        
+        addTeardownBlock {
+            //called When testExample() ends
+        }
     }
 
     func testPerformanceExample() throws {
@@ -48,6 +52,21 @@ class Udemy_UnitTestingSwiftMobileAppTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testUserService_WhenGivenValidRecord_CanSuccessfullyPersistToStorage() throws {
+        //Arrange
+        let userRange = User(firstName: "Jun", lastName: "Jee")
+        
+        //Act
+        let storedRecord = sut.storeRecord(userRange)
+        
+        addTeardownBlock{
+            sut.deleteRecord(storedRecord)
+        }
+        
+        //Assert
+        XCTAssertNotNil(storedRecord)
     }
 
 }
