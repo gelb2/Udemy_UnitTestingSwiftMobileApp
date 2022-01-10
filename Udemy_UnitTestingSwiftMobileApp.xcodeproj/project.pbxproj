@@ -16,6 +16,7 @@
 		4CF3DEBF278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3DEBE278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppTests.swift */; };
 		4CF3DEC9278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3DEC8278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppUITests.swift */; };
 		4CF3DECB278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3DECA278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppUITestsLaunchTests.swift */; };
+		4CF3DED8278C074400BAAF6C /* UserModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3DED7278C074400BAAF6C /* UserModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4CF3DEC4278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Udemy_UnitTestingSwiftMobileAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF3DEC8278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Udemy_UnitTestingSwiftMobileAppUITests.swift; sourceTree = "<group>"; };
 		4CF3DECA278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Udemy_UnitTestingSwiftMobileAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4CF3DED7278C074400BAAF6C /* UserModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				4CF3DEBE278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppTests.swift */,
+				4CF3DED7278C074400BAAF6C /* UserModelTest.swift */,
 			);
 			path = Udemy_UnitTestingSwiftMobileAppTests;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF3DED8278C074400BAAF6C /* UserModelTest.swift in Sources */,
 				4CF3DEBF278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
