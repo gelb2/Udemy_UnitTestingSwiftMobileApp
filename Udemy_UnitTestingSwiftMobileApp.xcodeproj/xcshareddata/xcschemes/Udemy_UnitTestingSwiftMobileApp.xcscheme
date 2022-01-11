@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1320"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4CF3DEA3278BDC8700BAAF6C"
+               BuildableName = "Udemy_UnitTestingSwiftMobileApp.app"
+               BlueprintName = "Udemy_UnitTestingSwiftMobileApp"
+               ReferencedContainer = "container:Udemy_UnitTestingSwiftMobileApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4CF3DEB9278BDC8800BAAF6C"
+               BuildableName = "Udemy_UnitTestingSwiftMobileAppTests.xctest"
+               BlueprintName = "Udemy_UnitTestingSwiftMobileAppTests"
+               ReferencedContainer = "container:Udemy_UnitTestingSwiftMobileApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4CF3DEC3278BDC8800BAAF6C"
+               BuildableName = "Udemy_UnitTestingSwiftMobileAppUITests.xctest"
+               BlueprintName = "Udemy_UnitTestingSwiftMobileAppUITests"
+               ReferencedContainer = "container:Udemy_UnitTestingSwiftMobileApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4CF3DEA3278BDC8700BAAF6C"
+            BuildableName = "Udemy_UnitTestingSwiftMobileApp.app"
+            BlueprintName = "Udemy_UnitTestingSwiftMobileApp"
+            ReferencedContainer = "container:Udemy_UnitTestingSwiftMobileApp.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4CF3DEA3278BDC8700BAAF6C"
+            BuildableName = "Udemy_UnitTestingSwiftMobileApp.app"
+            BlueprintName = "Udemy_UnitTestingSwiftMobileApp"
+            ReferencedContainer = "container:Udemy_UnitTestingSwiftMobileApp.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

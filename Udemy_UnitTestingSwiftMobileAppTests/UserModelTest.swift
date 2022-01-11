@@ -32,5 +32,9 @@ class UserModelTest: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testD() {
+        print("testD")
+    }
 
 }
