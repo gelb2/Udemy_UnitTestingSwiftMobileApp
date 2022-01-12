@@ -61,4 +61,14 @@ class SignUpFormModelValidatorTest: XCTestCase {
         XCTAssertFalse(isFirstNameValid, "name shouldn't be too long \(SignUpConstants.firstNameMaxLength)")
     }
     
+    func testSignUpFormModelValidator_WhenEmailContainsAtString_ShouldReturnTrue() {
+        //Arrange
+        
+        //Act
+        let isEmailValid = sut.isEmailValid(email: "123456@naver.com")
+        
+        //Assert
+        XCTAssertTrue(isEmailValid, "email should contain @ string")
+    }
+    
 }

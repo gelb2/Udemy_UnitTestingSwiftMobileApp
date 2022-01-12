@@ -18,4 +18,17 @@ class SignUpFormModelValidator {
         
         return returnValue
     }
+    
+    func isEmailValid(email: String) -> Bool {
+        var returnValue = true
+        
+        if email.contains("@") {
+            returnValue = true
+        } else {
+            returnValue = false
+        }
+        return returnValue
+    }
+    
+    
 }
