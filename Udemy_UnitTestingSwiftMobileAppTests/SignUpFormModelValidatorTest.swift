@@ -9,7 +9,18 @@ import XCTest
 @testable import Udemy_UnitTestingSwiftMobileApp
 
 class SignUpFormModelValidatorTest: XCTestCase {
+    
+    var sut: SignUpFormModelValidator!
 
+    override func setUp() {
+        sut = SignUpFormModelValidator()
+    }
+    
+    override func tearDown() {
+        //Remove for making test clean, managing resource
+        sut = nil
+    }
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -20,13 +31,22 @@ class SignUpFormModelValidatorTest: XCTestCase {
     
     func testSignUpFormModelValidator_WhenValidFirstNameProvided_ShouldReturnTrue() {
         //Arrange
-        let sut = SignUpFormModelValidator()
         
         //Act
         let isFirstNameValid = sut.isFirstNameValid(firstName: "junyoung")
         
         //Assert
-        XCTAssert(isFirstNameValid, "isFirstName must be true")
+        XCTAssertTrue(isFirstNameValid, "isFirstName must be true")
+    }
+    
+    func testSignUpFormModelValidator_WhenTooShortFirstNameProvided_ShouldReturnFalse() {
+        //Arrange
+        
+        //Act
+        let isFirstNameValid = sut.isFirstNameValid(firstName: "S")
+        
+        //Assert
+        XCTAssertFalse(isFirstNameValid, "name should be long enough")
     }
     
 }
