@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36ECD11B278E89C600557DB1 /* SignUpFormModelValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ECD11A278E89C600557DB1 /* SignUpFormModelValidatorTest.swift */; };
+		36ECD11D278E8AA500557DB1 /* SignUpFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ECD11C278E8AA500557DB1 /* SignUpFormModelValidator.swift */; };
 		4CF3DEA8278BDC8800BAAF6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3DEA7278BDC8800BAAF6C /* AppDelegate.swift */; };
 		4CF3DEAA278BDC8800BAAF6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3DEA9278BDC8800BAAF6C /* SceneDelegate.swift */; };
 		4CF3DEAC278BDC8800BAAF6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3DEAB278BDC8800BAAF6C /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36ECD11A278E89C600557DB1 /* SignUpFormModelValidatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidatorTest.swift; sourceTree = "<group>"; };
+		36ECD11C278E8AA500557DB1 /* SignUpFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidator.swift; sourceTree = "<group>"; };
 		4CF3DEA4278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Udemy_UnitTestingSwiftMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF3DEA7278BDC8800BAAF6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CF3DEA9278BDC8800BAAF6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 				4CF3DEA7278BDC8800BAAF6C /* AppDelegate.swift */,
 				4CF3DEA9278BDC8800BAAF6C /* SceneDelegate.swift */,
 				4CF3DEAB278BDC8800BAAF6C /* ViewController.swift */,
+				36ECD11C278E8AA500557DB1 /* SignUpFormModelValidator.swift */,
 				4CF3DEAD278BDC8800BAAF6C /* Main.storyboard */,
 				4CF3DEB0278BDC8800BAAF6C /* Assets.xcassets */,
 				4CF3DEB2278BDC8800BAAF6C /* LaunchScreen.storyboard */,
@@ -117,6 +122,7 @@
 			children = (
 				4CF3DEBE278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppTests.swift */,
 				4CF3DED7278C074400BAAF6C /* UserModelTest.swift */,
+				36ECD11A278E89C600557DB1 /* SignUpFormModelValidatorTest.swift */,
 			);
 			path = Udemy_UnitTestingSwiftMobileAppTests;
 			sourceTree = "<group>";
@@ -263,6 +269,7 @@
 			files = (
 				4CF3DEAC278BDC8800BAAF6C /* ViewController.swift in Sources */,
 				4CF3DEA8278BDC8800BAAF6C /* AppDelegate.swift in Sources */,
+				36ECD11D278E8AA500557DB1 /* SignUpFormModelValidator.swift in Sources */,
 				4CF3DEAA278BDC8800BAAF6C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF3DED8278C074400BAAF6C /* UserModelTest.swift in Sources */,
+				36ECD11B278E89C600557DB1 /* SignUpFormModelValidatorTest.swift in Sources */,
 				4CF3DEBF278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
