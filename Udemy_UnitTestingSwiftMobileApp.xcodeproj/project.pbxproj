@@ -12,6 +12,7 @@
 		36EBDB3227980FCA00EB435C /* SignUpFormRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EBDB3127980FCA00EB435C /* SignUpFormRequestModel.swift */; };
 		36EBDB342798117300EB435C /* SignUpResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EBDB332798117300EB435C /* SignUpResponseModel.swift */; };
 		36EBDB362798120200EB435C /* SignUpErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EBDB352798120200EB435C /* SignUpErrors.swift */; };
+		36EBDB3F2798500400EB435C /* MockUrlProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EBDB3E2798500400EB435C /* MockUrlProtocol.swift */; };
 		36ECD11B278E89C600557DB1 /* SignUpFormModelValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ECD11A278E89C600557DB1 /* SignUpFormModelValidatorTest.swift */; };
 		36ECD11D278E8AA500557DB1 /* SignUpFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ECD11C278E8AA500557DB1 /* SignUpFormModelValidator.swift */; };
 		36ECD11F278E941D00557DB1 /* SignUpConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ECD11E278E941D00557DB1 /* SignUpConstants.swift */; };
@@ -50,6 +51,7 @@
 		36EBDB3127980FCA00EB435C /* SignUpFormRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormRequestModel.swift; sourceTree = "<group>"; };
 		36EBDB332798117300EB435C /* SignUpResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponseModel.swift; sourceTree = "<group>"; };
 		36EBDB352798120200EB435C /* SignUpErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpErrors.swift; sourceTree = "<group>"; };
+		36EBDB3E2798500400EB435C /* MockUrlProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUrlProtocol.swift; sourceTree = "<group>"; };
 		36ECD11A278E89C600557DB1 /* SignUpFormModelValidatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidatorTest.swift; sourceTree = "<group>"; };
 		36ECD11C278E8AA500557DB1 /* SignUpFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidator.swift; sourceTree = "<group>"; };
 		36ECD11E278E941D00557DB1 /* SignUpConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConstants.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			children = (
 				36EBDB3D2798132F00EB435C /* Network */,
 				36EBDB3C2798132A00EB435C /* Models */,
+				36EBDB3E2798500400EB435C /* MockUrlProtocol.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				36ECD11B278E89C600557DB1 /* SignUpFormModelValidatorTest.swift in Sources */,
 				36EBDB2E27980E7D00EB435C /* SignupWebServiceTests.swift in Sources */,
 				4CF3DEBF278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppTests.swift in Sources */,
+				36EBDB3F2798500400EB435C /* MockUrlProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
