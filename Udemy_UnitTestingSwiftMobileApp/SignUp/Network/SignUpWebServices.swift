@@ -33,7 +33,13 @@ class SignUpWebServices {
         
         //we need to mock this urlsession object
         let dataTask = urlSession.dataTask(with: request) { data, response, error in
-            <#code#>
+            //TODO: write a new uint thest to handle and error
+            if let data = data,
+                let signResponseModel = try? JSONDecoder().decode(SignUpResponseModel.self, from: data) {
+                
+            } else {
+                // todo: create a new unit test to handle a error
+            }
         }
         
         dataTask.resume()
