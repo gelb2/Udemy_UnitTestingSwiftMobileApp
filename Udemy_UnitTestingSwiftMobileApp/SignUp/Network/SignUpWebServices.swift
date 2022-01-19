@@ -17,9 +17,9 @@ class SignUpWebServices {
         self.urlSession = urlSession
     }
     
-    func signUp(withForm: SignUpFormRequestModel, completionHandler: @escaping (SignUpResponseModel?, SignUpErrors?) -> Void) {
+    func signUp(withForm: SignUpFormRequestModel, completionHandler: @escaping (SignUpResponseModel?, SignUpError?) -> Void) {
         guard let url = URL(string: urlString) else {
-            completionHandler(nil, SignUpErrors.invalidRequestURLStringError)
+            completionHandler(nil, SignUpError.invalidRequestURLString)
             return
         }
         
@@ -37,7 +37,7 @@ class SignUpWebServices {
                 completionHandler(signResponseModel, nil)
             } else {
                 // todo: create a new unit test to handle a error
-                completionHandler(nil, SignUpErrors.responseModelParsingError)
+                completionHandler(nil, SignUpError.invalidResponseModel)
             }
         }
         
