@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		361996762798745E00B4048A /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361996752798745E00B4048A /* SignUpPresenterTests.swift */; };
 		36EBDB2E27980E7D00EB435C /* SignupWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EBDB2D27980E7D00EB435C /* SignupWebServiceTests.swift */; };
 		36EBDB3027980EFF00EB435C /* SignUpWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EBDB2F27980EFF00EB435C /* SignUpWebServices.swift */; };
 		36EBDB3227980FCA00EB435C /* SignUpFormRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EBDB3127980FCA00EB435C /* SignUpFormRequestModel.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		361996752798745E00B4048A /* SignUpPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTests.swift; sourceTree = "<group>"; };
 		36EBDB2D27980E7D00EB435C /* SignupWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServiceTests.swift; sourceTree = "<group>"; };
 		36EBDB2F27980EFF00EB435C /* SignUpWebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWebServices.swift; sourceTree = "<group>"; };
 		36EBDB3127980FCA00EB435C /* SignUpFormRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormRequestModel.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				36EBDB3D2798132F00EB435C /* Network */,
 				36EBDB3C2798132A00EB435C /* Models */,
 				36EBDB3E2798500400EB435C /* MockUrlProtocol.swift */,
+				361996752798745E00B4048A /* SignUpPresenterTests.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				361996762798745E00B4048A /* SignUpPresenterTests.swift in Sources */,
 				4CF3DED8278C074400BAAF6C /* UserModelTest.swift in Sources */,
 				36ECD11B278E89C600557DB1 /* SignUpFormModelValidatorTest.swift in Sources */,
 				36EBDB2E27980E7D00EB435C /* SignupWebServiceTests.swift in Sources */,
