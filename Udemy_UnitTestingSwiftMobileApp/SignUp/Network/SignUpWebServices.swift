@@ -16,6 +16,17 @@ class SignUpWebServices {
     }
     
     func signUp(withForm: SignUpFormRequestModel, completionHandler: @escaping (SignUpResponseModel?, SignUpErrors?) -> Void) {
+        guard let url = URL(string: urlString) else {
+            // TODO: create a unit test
+            return
+            
+        }
         
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
+        
+        request.httpBody = try? JSONEncoder().encode(withForm)
     }
 }
