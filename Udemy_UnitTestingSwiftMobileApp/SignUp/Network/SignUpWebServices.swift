@@ -31,7 +31,12 @@ class SignUpWebServices {
         
         //we need to mock this urlsession object
         let dataTask = urlSession.dataTask(with: request) { data, response, error in
-            //TODO: write a new uint thest to handle and error
+            
+            if let requestError = error {
+                completionHandler(nil, SignUpError.failedRequest(description: requestError.localizedDescription))
+                return
+            }
+            
             if let data = data,
                 let signResponseModel = try? JSONDecoder().decode(SignUpResponseModel.self, from: data) {
                 completionHandler(signResponseModel, nil)
