@@ -28,7 +28,6 @@ class SignUpWebServices {
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("application/json", forHTTPHeaderField: "Accept")
-        
         request.httpBody = try? JSONEncoder().encode(withForm)
         
         //we need to mock this urlsession object
@@ -36,7 +35,7 @@ class SignUpWebServices {
             //TODO: write a new uint thest to handle and error
             if let data = data,
                 let signResponseModel = try? JSONDecoder().decode(SignUpResponseModel.self, from: data) {
-                
+                completionHandler(signResponseModel, nil)
             } else {
                 // todo: create a new unit test to handle a error
             }
