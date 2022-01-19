@@ -8,6 +8,13 @@
 import Foundation
 
 class SignUpWebServices {
+    
+    private var urlString: String
+    
+    init(urlString: String) {
+        self.urlString = urlString
+    }
+    
     func signUp(withForm: SignUpFormRequestModel, completionHandler: @escaping (SignUpResponseModel?, SignUpErrors?) -> Void) {
         
     }
