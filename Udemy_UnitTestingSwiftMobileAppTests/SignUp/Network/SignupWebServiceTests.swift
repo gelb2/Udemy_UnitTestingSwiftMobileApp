@@ -26,6 +26,7 @@ class SignupWebServiceTests: XCTestCase {
         //act
         sut.signUp(withForm: signFromRequestModel) { (signUpResponseModel, error) in
             //assert
+            XCTAssertEqual(signUpResponseModel?.status, "ok")
         }
         
     }
