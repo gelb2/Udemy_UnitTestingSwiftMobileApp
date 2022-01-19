@@ -73,5 +73,24 @@ class SignupWebServiceTests: XCTestCase {
     }
     
     //TODO: make signUPService Return failed
+    
+    func testSignupWebService_WhenEmptyURLStringProvided_ReturnsError() {
+        //Arrange
+        sut = SignUpWebServices(urlString: "")
+        
+        let expectation = self.expectation(description: "an empty url string")
+        
+        //Act
+        sut.signUp(withForm: signFormRequestModel) { signupResponseMode, error in
+            
+            //Assert
+            XCTAssertEqual(error, SignUpErrors.invalidRequestURLStringError, "invalid requestURL Error")
+            XCTAssertNil(signupResponseMode)
+            expectation.fulfill()
+        }
+        
+        //Assert
+        self.wait(for: [expectation], timeout: 0.25)
+    }
 
 }
