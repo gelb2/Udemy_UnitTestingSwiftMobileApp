@@ -22,12 +22,17 @@ class SignupWebServiceTests: XCTestCase {
         //arrange
         let sut = SignUpWebServices()
         let signFromRequestModel = SignUpFormRequestModel(firstName: "jun", lastName: "jee", email: "@test@test.com", password: "12345678")
+        let expectataion = self.expectation(description: "signup webservice expectation")
         
         //act
         sut.signUp(withForm: signFromRequestModel) { (signUpResponseModel, error) in
             //assert
+            //"""{"status": "ok"}"""
             XCTAssertEqual(signUpResponseModel?.status, "ok")
+            expectataion.fulfill()
         }
+        
+        self.wait(for: [expectataion], timeout: 0.25)
         
     }
 
