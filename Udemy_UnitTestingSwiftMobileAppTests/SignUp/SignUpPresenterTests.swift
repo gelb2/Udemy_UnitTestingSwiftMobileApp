@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import Udemy_UnitTestingSwiftMobileApp
 
 class SignUpPresenterTests: XCTestCase {
     
@@ -19,6 +20,7 @@ class SignUpPresenterTests: XCTestCase {
     
     func testSignupPresenter_WhenInformationProvided_WillValidateEachProtperty() {
         //Arrange
+        let signupFormModel = SignupFormModel(firstName: "Jun", lastName: "Jee", email: "test@test.com", password: "12345", repeatPassword: "12345")
         
         //Act
         

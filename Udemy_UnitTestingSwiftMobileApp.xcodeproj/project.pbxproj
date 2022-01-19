@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		361996762798745E00B4048A /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361996752798745E00B4048A /* SignUpPresenterTests.swift */; };
+		361996782798754E00B4048A /* SignupFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361996772798754E00B4048A /* SignupFormModel.swift */; };
 		36EBDB2E27980E7D00EB435C /* SignupWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EBDB2D27980E7D00EB435C /* SignupWebServiceTests.swift */; };
 		36EBDB3027980EFF00EB435C /* SignUpWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EBDB2F27980EFF00EB435C /* SignUpWebServices.swift */; };
 		36EBDB3227980FCA00EB435C /* SignUpFormRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EBDB3127980FCA00EB435C /* SignUpFormRequestModel.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		361996752798745E00B4048A /* SignUpPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTests.swift; sourceTree = "<group>"; };
+		361996772798754E00B4048A /* SignupFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModel.swift; sourceTree = "<group>"; };
 		36EBDB2D27980E7D00EB435C /* SignupWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServiceTests.swift; sourceTree = "<group>"; };
 		36EBDB2F27980EFF00EB435C /* SignUpWebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWebServices.swift; sourceTree = "<group>"; };
 		36EBDB3127980FCA00EB435C /* SignUpFormRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormRequestModel.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				36EBDB3127980FCA00EB435C /* SignUpFormRequestModel.swift */,
 				36EBDB332798117300EB435C /* SignUpResponseModel.swift */,
 				36EBDB352798120200EB435C /* SignUpError.swift */,
+				361996772798754E00B4048A /* SignupFormModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				4CF3DEAC278BDC8800BAAF6C /* ViewController.swift in Sources */,
 				36EBDB3227980FCA00EB435C /* SignUpFormRequestModel.swift in Sources */,
 				36EBDB362798120200EB435C /* SignUpError.swift in Sources */,
+				361996782798754E00B4048A /* SignupFormModel.swift in Sources */,
 				4CF3DEA8278BDC8800BAAF6C /* AppDelegate.swift in Sources */,
 				36ECD11D278E8AA500557DB1 /* SignUpFormModelValidator.swift in Sources */,
 				4CF3DEAA278BDC8800BAAF6C /* SceneDelegate.swift in Sources */,
