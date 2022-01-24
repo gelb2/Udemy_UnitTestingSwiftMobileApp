@@ -21,26 +21,24 @@ class ViewControllerTest: XCTestCase {
     }
     
     override func tearDown() {
+        storyboard = nil
+        sut = nil
         super.tearDown()
     }
     
-    func testViewController_FirstNameTextField() {
+    func testViewController_WhenCreated_HasRequiredTextFieldsEmpty() throws {
         
-        // TODO: asdfasdfasf
+        let firstNameTextField = try XCTUnwrap(sut?.firstNameTextField, "first tetxfield is not connected to outlet")
+        let lastNameTextField = try XCTUnwrap(sut?.lastNameTextField)
+        let emailTextField = try XCTUnwrap(sut?.emailTextField)
+        let passwordTextField = try XCTUnwrap(sut?.passwordTextField)
+        let repeatPasswordTextField = try XCTUnwrap(sut?.repeatPasswordTextField)
         
-        // MARK: sdfsdf
-        
-        //Arrange
-        
-        
-        //Act
-        
-        //Assert
-        XCTAssertEqual(sut?.firstNameTextField.text, "")
-        XCTAssertEqual(sut?.lastNameTextField.text, "")
-        XCTAssertEqual(sut?.emailTextField.text, "")
-        XCTAssertEqual(sut?.passwordTextField.text, "")
-        XCTAssertEqual(sut?.repeatPasswordTextField.text, "")
+        XCTAssertEqual(firstNameTextField.text, "")
+        XCTAssertEqual(lastNameTextField.text, "")
+        XCTAssertEqual(emailTextField.text, "")
+        XCTAssertEqual(passwordTextField.text, "")
+        XCTAssertEqual(repeatPasswordTextField.text, "")
     }
 
 }
