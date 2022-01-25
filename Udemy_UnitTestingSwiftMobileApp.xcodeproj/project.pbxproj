@@ -12,6 +12,11 @@
 		3619967A2798766300B4048A /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361996792798766300B4048A /* SignUpPresenter.swift */; };
 		3619967C2798773700B4048A /* MockSignUpModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619967B2798773700B4048A /* MockSignUpModelValidator.swift */; };
 		362618CA279EFAF000A1E206 /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362618C9279EFAF000A1E206 /* ViewControllerTest.swift */; };
+		362618D127A059D500A1E206 /* LoadingViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362618D027A059D500A1E206 /* LoadingViewControllerTest.swift */; };
+		362618D327A05A3500A1E206 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362618D227A05A3500A1E206 /* LoadingViewController.swift */; };
+		362618D627A05AE200A1E206 /* XIBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362618D427A05AE200A1E206 /* XIBViewController.swift */; };
+		362618D727A05AE200A1E206 /* XIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362618D527A05AE200A1E206 /* XIBViewController.xib */; };
+		362618D927A05BB900A1E206 /* CodeBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362618D827A05BB900A1E206 /* CodeBasedViewController.swift */; };
 		36EBDB2E27980E7D00EB435C /* SignupWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EBDB2D27980E7D00EB435C /* SignupWebServiceTests.swift */; };
 		36EBDB3027980EFF00EB435C /* SignUpWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EBDB2F27980EFF00EB435C /* SignUpWebServices.swift */; };
 		36EBDB3227980FCA00EB435C /* SignUpFormRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EBDB3127980FCA00EB435C /* SignUpFormRequestModel.swift */; };
@@ -56,6 +61,11 @@
 		361996792798766300B4048A /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		3619967B2798773700B4048A /* MockSignUpModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignUpModelValidator.swift; sourceTree = "<group>"; };
 		362618C9279EFAF000A1E206 /* ViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
+		362618D027A059D500A1E206 /* LoadingViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewControllerTest.swift; sourceTree = "<group>"; };
+		362618D227A05A3500A1E206 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		362618D427A05AE200A1E206 /* XIBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBViewController.swift; sourceTree = "<group>"; };
+		362618D527A05AE200A1E206 /* XIBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBViewController.xib; sourceTree = "<group>"; };
+		362618D827A05BB900A1E206 /* CodeBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBasedViewController.swift; sourceTree = "<group>"; };
 		36EBDB2D27980E7D00EB435C /* SignupWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServiceTests.swift; sourceTree = "<group>"; };
 		36EBDB2F27980EFF00EB435C /* SignUpWebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWebServices.swift; sourceTree = "<group>"; };
 		36EBDB3127980FCA00EB435C /* SignUpFormRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormRequestModel.swift; sourceTree = "<group>"; };
@@ -134,6 +144,10 @@
 			isa = PBXGroup;
 			children = (
 				4CF3DEAB278BDC8800BAAF6C /* ViewController.swift */,
+				362618D227A05A3500A1E206 /* LoadingViewController.swift */,
+				362618D427A05AE200A1E206 /* XIBViewController.swift */,
+				362618D527A05AE200A1E206 /* XIBViewController.xib */,
+				362618D827A05BB900A1E206 /* CodeBasedViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -215,6 +229,7 @@
 				4CF3DEBE278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppTests.swift */,
 				4CF3DED7278C074400BAAF6C /* UserModelTest.swift */,
 				362618C9279EFAF000A1E206 /* ViewControllerTest.swift */,
+				362618D027A059D500A1E206 /* LoadingViewControllerTest.swift */,
 			);
 			path = Udemy_UnitTestingSwiftMobileAppTests;
 			sourceTree = "<group>";
@@ -332,6 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				362618D727A05AE200A1E206 /* XIBViewController.xib in Resources */,
 				4CF3DEB4278BDC8800BAAF6C /* LaunchScreen.storyboard in Resources */,
 				4CF3DEB1278BDC8800BAAF6C /* Assets.xcassets in Resources */,
 				4CF3DEAF278BDC8800BAAF6C /* Main.storyboard in Resources */,
@@ -367,9 +383,12 @@
 				361996782798754E00B4048A /* SignupFormModel.swift in Sources */,
 				4CF3DEA8278BDC8800BAAF6C /* AppDelegate.swift in Sources */,
 				36ECD11D278E8AA500557DB1 /* SignUpFormModelValidator.swift in Sources */,
+				362618D627A05AE200A1E206 /* XIBViewController.swift in Sources */,
+				362618D927A05BB900A1E206 /* CodeBasedViewController.swift in Sources */,
 				4CF3DEAA278BDC8800BAAF6C /* SceneDelegate.swift in Sources */,
 				3619967A2798766300B4048A /* SignUpPresenter.swift in Sources */,
 				36ECD11F278E941D00557DB1 /* SignUpConstants.swift in Sources */,
+				362618D327A05A3500A1E206 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				361996762798745E00B4048A /* SignUpPresenterTests.swift in Sources */,
+				362618D127A059D500A1E206 /* LoadingViewControllerTest.swift in Sources */,
 				4CF3DED8278C074400BAAF6C /* UserModelTest.swift in Sources */,
 				362618CA279EFAF000A1E206 /* ViewControllerTest.swift in Sources */,
 				36ECD11B278E89C600557DB1 /* SignUpFormModelValidatorTest.swift in Sources */,
