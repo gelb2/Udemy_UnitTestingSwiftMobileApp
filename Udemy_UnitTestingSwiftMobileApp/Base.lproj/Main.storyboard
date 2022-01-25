@@ -85,6 +85,21 @@
             </objects>
             <point key="canvasLocation" x="139" y="138"/>
         </scene>
+        <!--Loading View Controller-->
+        <scene sceneID="HLZ-jC-ytl">
+            <objects>
+                <viewController storyboardIdentifier="LoadingViewController" id="aA8-zk-Vh1" customClass="LoadingViewController" customModule="Udemy_UnitTestingSwiftMobileApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qOT-pe-Asx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cVw-Ba-HnL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h39-3g-Dap" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="145"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
