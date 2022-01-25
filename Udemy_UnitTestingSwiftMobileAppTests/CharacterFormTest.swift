@@ -21,5 +21,16 @@ class CharacterFormTest: XCTestCase {
         
         //Assert
     }
+    
+    func testFirstNameValidation_WhenValidCharProvided_NoThrowsAnError() {
+        //Arrange
+        let sut = CharacterFormModelValidator()
+        //Act
+        XCTAssertNoThrow(try sut.isFirstNameValid("junYoung"), "no error founded")
+        
+        
+        
+        //Assert
+    }
 
 }
