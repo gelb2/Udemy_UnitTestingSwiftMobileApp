@@ -51,5 +51,20 @@ class CharacterFormTest: XCTestCase {
         
         //Assert
     }
+    
+    func testFirstNameValidation_WhenValidCharProvided_DoTryCatch() {
+        //Arrange
+        let sut = CharacterFormModelValidator()
+        //Act
+        do {
+            let _ = try sut.isFirstNameValid("JunYoung")
+        } catch {
+            XCTFail("was not supposed to throw an error when a validname was provided")
+        }
+        
+        
+        
+        //Assert
+    }
 
 }
