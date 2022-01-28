@@ -12,6 +12,7 @@
 		3619967A2798766300B4048A /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361996792798766300B4048A /* SignUpPresenter.swift */; };
 		3619967C2798773700B4048A /* MockSignUpModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619967B2798773700B4048A /* MockSignUpModelValidator.swift */; };
 		3625BA3A27A43EAD00716CC8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625BA3927A43EAD00716CC8 /* LoginViewController.swift */; };
+		3625BA3C27A4401300716CC8 /* LoginViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3625BA3B27A4401300716CC8 /* LoginViewControllerTest.swift */; };
 		362618CA279EFAF000A1E206 /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362618C9279EFAF000A1E206 /* ViewControllerTest.swift */; };
 		362618D127A059D500A1E206 /* LoadingViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362618D027A059D500A1E206 /* LoadingViewControllerTest.swift */; };
 		362618D327A05A3500A1E206 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362618D227A05A3500A1E206 /* LoadingViewController.swift */; };
@@ -65,6 +66,7 @@
 		361996792798766300B4048A /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		3619967B2798773700B4048A /* MockSignUpModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignUpModelValidator.swift; sourceTree = "<group>"; };
 		3625BA3927A43EAD00716CC8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3625BA3B27A4401300716CC8 /* LoginViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTest.swift; sourceTree = "<group>"; };
 		362618C9279EFAF000A1E206 /* ViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
 		362618D027A059D500A1E206 /* LoadingViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewControllerTest.swift; sourceTree = "<group>"; };
 		362618D227A05A3500A1E206 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 				362618C9279EFAF000A1E206 /* ViewControllerTest.swift */,
 				362618D027A059D500A1E206 /* LoadingViewControllerTest.swift */,
 				362618DE27A0691F00A1E206 /* CharacterFormTest.swift */,
+				3625BA3B27A4401300716CC8 /* LoginViewControllerTest.swift */,
 			);
 			path = Udemy_UnitTestingSwiftMobileAppTests;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				361996762798745E00B4048A /* SignUpPresenterTests.swift in Sources */,
+				3625BA3C27A4401300716CC8 /* LoginViewControllerTest.swift in Sources */,
 				362618D127A059D500A1E206 /* LoadingViewControllerTest.swift in Sources */,
 				4CF3DED8278C074400BAAF6C /* UserModelTest.swift in Sources */,
 				362618CA279EFAF000A1E206 /* ViewControllerTest.swift in Sources */,
