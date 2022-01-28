@@ -43,6 +43,28 @@ class TestingViewControllerNavigationTests: XCTestCase {
         //하드웨어 성능을 타기 때문에 1초나 0.25초로 하면 실패한다
         waitForExpectations(timeout: 1.5)
     }
+    
+    func testNextButton_WhenTapped_SecondViewControllerIsPushed_RunLoop() {
+        sut.nextButton.sendActions(for: .touchUpInside)
+        
+        RunLoop.current.run(until: Date())
+        
+        guard let _ = navigationController.topViewController as? SecondViewController else {
+            XCTFail("second vc is not top vc")
+            return
+        }
+    }
+    
+    func testNextButton_WhenTapped_SecondViewControllerIsPushed_SpyNavigationController()  {
+        let navi = SpyNavigationControllerViewController(rootViewController: sut)
+        
+        sut.nextButton.sendActions(for: .touchUpInside)
+        
+        guard let _ = navi.pushedViewController as? SecondViewController else {
+            XCTFail("spyNavi doesn't hold second vc")
+            return
+        }
+    }
 
 
 
