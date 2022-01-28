@@ -34,4 +34,27 @@ class LoginViewControllerTest: XCTestCase {
         XCTAssertEqual(emailTextFieldContentType, UITextContentType.emailAddress)
     }
     
+    func testEmailTextField_WhenCreated_HasEmailKeyboardType() throws {
+        //Arrange
+        let emailTextField = try XCTUnwrap(sut.emailTextField, "emailTextField is not connected")
+        
+        //Act
+        let keyboardType = emailTextField.keyboardType
+        
+        //Assert
+        XCTAssertEqual(keyboardType, UIKeyboardType.emailAddress)
+    }
+    
+    func testEmailTextField_WhenCreated_isSecureTextEntry() throws {
+        //Arrange
+        let passwordTextField = try XCTUnwrap(sut.passwordTextField, "passwordTF is not connected")
+        
+        //Act
+        let textEntry = passwordTextField.isSecureTextEntry
+        
+        //Assert
+        XCTAssertEqual(textEntry, true)
+        XCTAssertTrue(textEntry)
+    }
+    
 }
