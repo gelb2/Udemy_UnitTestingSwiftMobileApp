@@ -75,7 +75,7 @@ class SignUpFlowUITest: XCTestCase {
         signUpbutton.tap()
         
         //Assert
-        
+        // TODO: Make ViewController To Test + Make Alert Presentation Logic related VM Logic
         XCTAssertTrue(app.alerts["ErrorAloertDialog"].exists, "Alert Dialog is not presented")
         XCTAssertTrue(app.alerts["ErrorAloertDialog"].waitForExistence(timeout: 0.5), "Alert Dialog is not presented")
     }
