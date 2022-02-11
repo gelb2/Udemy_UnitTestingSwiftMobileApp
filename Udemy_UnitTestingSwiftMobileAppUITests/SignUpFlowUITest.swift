@@ -37,9 +37,55 @@ class SignUpFlowUITest: XCTestCase {
         let lastName = app.textFields["lastNameTextFieldIdentifier"]
         
         XCTAssertTrue(firstName.isEnabled)
+        XCTAssertTrue(lastName.isEnabled)
         XCTAssertTrue(passwordTextField.isEnabled)
         XCTAssertTrue(repeatPassword.isEnabled)
         XCTAssertTrue(signUpbutton.isEnabled)
+    }
+    
+    func testViewControllerWhenInvalidForSubmitted_PresentsErrorAlert() {
+        //Arrange
+        let app = XCUIApplication()
+        app.launch()
+        
+        //Get UIElement With Placeholder and title
+        let firstName = app.textFields["first name:"]
+        let passwordTextField = app.textFields["Password:"]
+        let repeatPassword = app.secureTextFields["Repeat password:"]
+        let signUpbutton = app.buttons["SignUp"]
+        
+        //Get UIElement With Identifier
+        let lastName = app.textFields["lastNameTextFieldIdentifier"]
+        
+        
+        firstName.tap()
+        firstName.typeText("S")
+        
+        lastName.tap()
+        lastName.typeText("P")
+        
+        passwordTextField.tap()
+        passwordTextField.typeText("123456")
+        
+        repeatPassword.tap()
+        repeatPassword.typeText("123")
+        
+        
+        //Act
+        signUpbutton.tap()
+        
+        //Assert
+        
+        XCTAssertTrue(app.alerts["ErrorAloertDialog"].exists, "Alert Dialog is not presented")
+        XCTAssertTrue(app.alerts["ErrorAloertDialog"].waitForExistence(timeout: 0.5), "Alert Dialog is not presented")
+    }
+    
+    func testLaunchPerformance() throws {
+        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
+            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
+                XCUIApplication().launch()
+            }
+        }
     }
 
     override func tearDownWithError() throws {
