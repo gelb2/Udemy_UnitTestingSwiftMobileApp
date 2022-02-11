@@ -26,6 +26,7 @@
 		362618DB27A0683300A1E206 /* CharacterFormError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362618DA27A0683300A1E206 /* CharacterFormError.swift */; };
 		362618DD27A0685600A1E206 /* CharacterFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362618DC27A0685600A1E206 /* CharacterFormModelValidator.swift */; };
 		362618DF27A0691F00A1E206 /* CharacterFormTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362618DE27A0691F00A1E206 /* CharacterFormTest.swift */; };
+		36602EEE27B6A0000031BE19 /* SignUpFlowUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36602EEC27B69FBB0031BE19 /* SignUpFlowUITest.swift */; };
 		36EBDB2E27980E7D00EB435C /* SignupWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EBDB2D27980E7D00EB435C /* SignupWebServiceTests.swift */; };
 		36EBDB3027980EFF00EB435C /* SignUpWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EBDB2F27980EFF00EB435C /* SignUpWebServices.swift */; };
 		36EBDB3227980FCA00EB435C /* SignUpFormRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EBDB3127980FCA00EB435C /* SignUpFormRequestModel.swift */; };
@@ -84,6 +85,7 @@
 		362618DA27A0683300A1E206 /* CharacterFormError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFormError.swift; sourceTree = "<group>"; };
 		362618DC27A0685600A1E206 /* CharacterFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFormModelValidator.swift; sourceTree = "<group>"; };
 		362618DE27A0691F00A1E206 /* CharacterFormTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFormTest.swift; sourceTree = "<group>"; };
+		36602EEC27B69FBB0031BE19 /* SignUpFlowUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFlowUITest.swift; sourceTree = "<group>"; };
 		36EBDB2D27980E7D00EB435C /* SignupWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServiceTests.swift; sourceTree = "<group>"; };
 		36EBDB2F27980EFF00EB435C /* SignUpWebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWebServices.swift; sourceTree = "<group>"; };
 		36EBDB3127980FCA00EB435C /* SignUpFormRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormRequestModel.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 		4CF3DEC7278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppUITests */ = {
 			isa = PBXGroup;
 			children = (
+				36602EEC27B69FBB0031BE19 /* SignUpFlowUITest.swift */,
 				4CF3DEC8278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppUITests.swift */,
 				4CF3DECA278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppUITestsLaunchTests.swift */,
 			);
@@ -450,6 +453,7 @@
 			files = (
 				4CF3DECB278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppUITestsLaunchTests.swift in Sources */,
 				4CF3DEC9278BDC8800BAAF6C /* Udemy_UnitTestingSwiftMobileAppUITests.swift in Sources */,
+				36602EEE27B6A0000031BE19 /* SignUpFlowUITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
